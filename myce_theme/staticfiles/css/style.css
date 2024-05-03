@@ -11,14 +11,14 @@ body {
 }
 
 a {
-  color: #d11c31;
+  color: #ba1c21;
 }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #fff;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link {
-  background: #d11c31;
+  background: #ba1c21;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
@@ -44,11 +44,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #d11c31 !important;
+  background-color: #ba1c21 !important;
 }
 
 .fas {
-  color: #d11c31;
+  color: #ba1c21;
 }
 
 #alerts .fas {
@@ -63,7 +63,7 @@ a {
 }
 
 .bg-dark {
-  background-color: #d11c31 !important;
+  background-color: #ba1c21 !important;
   background-color: #fff !important;
 }
 
@@ -73,13 +73,13 @@ header .navbar, .bg-light .navbar {
 
 .btn-outline-secondary {
   color: #fff;
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
 }
 .btn-outline-secondary:hover {
   color: #ffffff;
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
 }
 
 .bg-gradient-primary {
@@ -92,21 +92,21 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#d11c31;
+  color:#ba1c21;
 }
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
   color: #ffffff;
 }
 .btn-primary {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
 }
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #d11c31;
+  background-color: #ba1c21;
 }
 .jumbotron {
   margin-bottom: 0;
@@ -143,12 +143,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
 }
 
 .text-primary {
-  color: #d11c31 !important;
+  color: #ba1c21 !important;
 }
 
 .details .detail_label {
@@ -278,7 +278,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #d11c31 !important;
+  background-color:  #ba1c21 !important;
 }
 
 .card-announcement .card-title {
@@ -286,13 +286,13 @@ button.ms-choice {
 }
 
 .card-announcement .alert-success {
-  color: #d11c31;
+  color: #ba1c21;
   background: white;
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #ba1c21;
+  border-color: #ba1c21;
 }
 
 @media(max-width:767px){
@@ -312,7 +312,7 @@ button.ms-choice {
 }
 
 .transaction-debit {
-  color:#d11c31;
+  color:#ba1c21;
 }
 
 
