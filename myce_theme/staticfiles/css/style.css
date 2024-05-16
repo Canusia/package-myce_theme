@@ -278,7 +278,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #1C4DA0 !important;
+  background-color:  #F36411 !important;
 }
 
 .card-announcement .card-title {
@@ -286,13 +286,13 @@ button.ms-choice {
 }
 
 .card-announcement .alert-success {
-  color: #1C4DA0;
+  color: #F36411;
   background: white;
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #1C4DA0;
-  border-color: #1C4DA0;
+  background-color: #F36411;
+  border-color: #F36411;
 }
 
 @media(max-width:767px){
