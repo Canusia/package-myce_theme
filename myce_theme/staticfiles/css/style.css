@@ -11,14 +11,14 @@ body {
 }
 
 a {
-  color: #ba1c21;
+  color: #1C4DA0;
 }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #fff;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link {
-  background: #ba1c21;
+  background: #1C4DA0;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
@@ -44,11 +44,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #ba1c21 !important;
+  background-color: #1C4DA0 !important;
 }
 
 .fas {
-  color: #ba1c21;
+  color: #1C4DA0;
 }
 
 #alerts .fas {
@@ -73,18 +73,18 @@ header .navbar, .bg-light .navbar {
 
 .btn-outline-secondary {
   color: #fff;
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #565656;
+  border-color: #565656;
 }
 .btn-outline-secondary:hover {
   color: #ffffff;
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .bg-gradient-primary {
-  background-color: #707780;
-  background-image: linear-gradient(180deg,#707780 10%,#707780 100%);
+  background-color: #565656;
+  background-image: linear-gradient(180deg,#565656 10%,#565656 100%);
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
@@ -92,21 +92,21 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#ba1c21;
+  color:#565656;
 }
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #565656;
+  border-color: #565656;
   color: #ffffff;
 }
 .btn-primary {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #565656;
+  border-color: #565656;
 }
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #ba1c21;
+  background-color: #565656;
 }
 .jumbotron {
   margin-bottom: 0;
@@ -143,12 +143,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #565656;
+  border-color: #565656;
 }
 
 .text-primary {
-  color: #ba1c21 !important;
+  color: #565656 !important;
 }
 
 .details .detail_label {
@@ -278,7 +278,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #ba1c21 !important;
+  background-color:  #1C4DA0 !important;
 }
 
 .card-announcement .card-title {
@@ -286,13 +286,13 @@ button.ms-choice {
 }
 
 .card-announcement .alert-success {
-  color: #ba1c21;
+  color: #1C4DA0;
   background: white;
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #1C4DA0;
+  border-color: #1C4DA0;
 }
 
 @media(max-width:767px){
