@@ -49,7 +49,7 @@ a {
 }
 
 .fas {
-  color: #04487f;
+  color: #04487f !important;
 }
 
 #alerts .fas {
