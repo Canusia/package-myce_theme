@@ -11,14 +11,14 @@ body {
 }
 
 a {
-  color: #d11c31;
+  color: #42235e;
 }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #fff;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link {
-  background: #14234b;
+  background: #42235e;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
@@ -44,11 +44,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #14234b !important;
+  background-color: #42235e !important;
 }
 
 .fas {
-  color: #d11c31;
+  color: #42235e;
 }
 
 #alerts .fas {
@@ -63,28 +63,28 @@ a {
 }
 
 .bg-dark {
-  background-color: #d11c31 !important;
+  background-color: #42235e !important;
   background-color: #fff !important;
 }
 
 header .navbar, .bg-light .navbar {
-  background-color: #fff !important;
+  background-color: #42235e !important;
 }
 
 .btn-outline-secondary {
   color: #fff;
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
 }
 .btn-outline-secondary:hover {
   color: #ffffff;
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
 }
 
 .bg-gradient-primary {
-  background-color: #707780;
-  background-image: linear-gradient(180deg,#707780 10%,#707780 100%);
+  background-color: #939393;
+  background-image: linear-gradient(180deg,#939393 10%,#939393 100%);
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
@@ -92,21 +92,21 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#d11c31;
+  color:#42235e;
 }
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
   color: #ffffff;
 }
 .btn-primary {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
 }
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #d11c31;
+  background-color: #42235e;
 }
 .jumbotron {
   margin-bottom: 0;
@@ -143,12 +143,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
 }
 
 .text-primary {
-  color: #d11c31 !important;
+  color: #42235e !important;
 }
 
 .details .detail_label {
@@ -278,7 +278,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #14234b !important;
+  background-color:  #786636 !important;
 }
 
 .card-announcement .card-title {
@@ -286,13 +286,13 @@ button.ms-choice {
 }
 
 .card-announcement .alert-success {
-  color: #d11c31;
+  color: #42235e;
   background: white;
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #d11c31;
-  border-color: #d11c31;
+  background-color: #42235e;
+  border-color: #42235e;
 }
 
 @media(max-width:767px){
@@ -312,7 +312,7 @@ button.ms-choice {
 }
 
 .transaction-debit {
-  color:#d11c31;
+  color:#42235e;
 }
 
 
@@ -334,4 +334,8 @@ button.ms-choice {
   width: 30% !important;
   margin-right: .5em;
   display: inline-block !important;
+}
+
+tfoot {
+  display: table-row-group;
 }
