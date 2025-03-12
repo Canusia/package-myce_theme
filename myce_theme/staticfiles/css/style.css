@@ -16,7 +16,7 @@ a {
 }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
-  color: #fff;
+  color: #000;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
   background: #FFC100;
@@ -77,12 +77,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .btn-outline-secondary {
-  color: #fff;
+  color: #000;
   background-color: #ffcd00;
   border-color: #ffcd00;
 }
 .btn-outline-secondary:hover {
-  color: #ffffff;
+  color: #000;
   background-color: #ffcd00;
   border-color: #ffcd00;
 }
@@ -143,8 +143,14 @@ header .navbar, .bg-light .navbar {
 }
 
 .list-group-item-success {
-  background-color: #0f6848;
+  background-color: #0172CE;
   color: #fff;
+}
+
+.list-group-item-success a {
+  background-color: #0172CE;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .page-item.active .page-link {
@@ -287,11 +293,11 @@ button.ms-choice {
 }
 
 .card-announcement .card-title {
-  color: white;
+  color: #000;
 }
 
 .card-announcement .alert-success {
-  color: #ffcd00;
+  color: #000;
   background: white;
 }
 
