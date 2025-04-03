@@ -15,10 +15,16 @@ a {
   color: #05233d;
 }
 
+a:link { text-decoration: underlined; }
+
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #000;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
+  background: #FFC100;
+  color: #000;
+}
+.sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
   background: #FFC100;
   color: #000;
 }
@@ -77,14 +83,14 @@ header .navbar, .bg-light .navbar {
 }
 
 .btn-outline-secondary {
-  color: #000;
-  background-color: #ffcd00;
-  border-color: #ffcd00;
+  color: #05233d;
+	background-color: #ffcd00;
+	border-color: #ffcd00;
 }
 .btn-outline-secondary:hover {
-  color: #000;
-  background-color: #ffcd00;
-  border-color: #ffcd00;
+  color: #ffcd00;
+	background-color: #05233d;
+	border-color: #05233d;
 }
 
 .bg-gradient-primary {
@@ -102,13 +108,14 @@ header .navbar, .bg-light .navbar {
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: #ffcd00;
-  border-color: #ffcd00;
-  color: #ffffff;
+  color: #05233d !important; 
+	background-color: #ffcd00; 
+	border-color: #ffcd00;
 }
 .btn-primary {
-  background-color: #05233d;
-  border-color: #05233d;
+  color: #ffcd00; 
+	background-color: #05233d; 
+	border-color: #05233d;
 }
 .dropdown-item.active, .dropdown-item:active {
   background-color: #ffcd00;
@@ -156,6 +163,7 @@ header .navbar, .bg-light .navbar {
 .page-item.active .page-link {
   background-color: #ffcd00;
   border-color: #ffcd00;
+  color: #05233d !important;
 }
 
 .text-primary {
@@ -346,4 +354,47 @@ button.ms-choice {
   width: 30% !important;
   margin-right: .5em;
   display: inline-block !important;
+}
+
+
+.breadcrumb-item.active {
+  color: #333;
+}
+
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #333;
+}
+
+.text-muted {
+  color: #333 !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #333;
+    font-weight: bold;
+    background-color: #fff;
+    border-color: #aaa #aaa #fff;
+}
+
+.border, .card {
+  border: 1px solid #aaa !important;
+}
+.nav-tabs {
+  border-bottom: 1px solid #aaa;
+}
+.border-top-0 {
+  border-top: 0px solid #fff !important;
+}
+
+.form-control {
+  color: #333;
+}
+
+.btn-warning {
+  color: #05233d;
+  background-color: #f6c23e;
+  border-color: #f6c23e;
 }
