@@ -398,3 +398,12 @@ input::placeholder {
   background-color: #f6c23e;
   border-color: #f6c23e;
 }
+.swal-button:not([disabled]):hover {
+  background-color: #05233d;
+  color: #f6c23e;
+}
+
+.swal-button--confirm {
+  background-color: #f6c23e;
+  color: #05233d;
+}
