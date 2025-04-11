@@ -99,7 +99,8 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: #7a0019;
+  color: #000;
+  font-weight: bold;
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
@@ -365,7 +366,7 @@ button.ms-choice {
 input::placeholder {
   font-weight: bold;
   opacity: 0.5;
-  color: #333;
+  color: #111;
 }
 
 .text-muted {
@@ -406,4 +407,9 @@ input::placeholder {
 .swal-button--confirm {
   background-color: #f6c23e;
   color: #05233d;
+}
+
+li.list-group-item-danger {
+  color: #78261f;
+  background-color: #f8ccc8;
 }
