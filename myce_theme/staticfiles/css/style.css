@@ -15,7 +15,7 @@ a {
   color: #05233d;
 }
 
-a:link { text-decoration: underlined; }
+a:link { text-decoration: underline; }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #000;
@@ -113,8 +113,10 @@ header .navbar, .bg-light .navbar {
 	background-color: #ffcd00; 
 	border-color: #ffcd00;
 }
-.btn-primary {
-  color: #ffcd00; 
+
+
+.btn-primary, btn.text-white, btn.text-light, button > span > i.fas {
+  color: #ffcd00 !important; 
 	background-color: #05233d; 
 	border-color: #05233d;
 }
