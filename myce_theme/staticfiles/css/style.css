@@ -15,7 +15,7 @@ a {
   color: #05233d;
 }
 
-a:link { text-decoration: underline; }
+a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decoration: underline; }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
   color: #000 !important;
