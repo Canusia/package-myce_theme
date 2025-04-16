@@ -18,7 +18,7 @@ a {
 a:link { text-decoration: underline; }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
-  color: #000;
+  color: #000 !important;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
   background: #FFC100;
