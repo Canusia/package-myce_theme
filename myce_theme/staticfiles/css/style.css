@@ -15,9 +15,9 @@ header .navbar, .bg-light .navbar {
 }
 
 a {
-  color: #feca35;
+  color: #502e81;
+  font-weight: bold;
 }
-
 
 .bg-primary {
   background-color: #502e81 !important;
