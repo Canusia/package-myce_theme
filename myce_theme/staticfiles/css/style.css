@@ -11,14 +11,24 @@ body {
 }
 
 a {
-  color: #ba1c21;
+  color: #000;
+  text-decoration: underline;
 }
 
-.sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
-  color: #fff;
+.sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i, .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item.active .nav-link i, .sidebar-dark .nav-item.active .nav-link:hover i, .sidebar-dark .nav-item .nav-link:hover i, .sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
+  color: #000;
+  text-decoration: none;
+  
 }
-.sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link {
-  background: #ba1c21;
+.sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:focus i {
+  background: #bc9b6a;
+  color: #000;
+  text-decoration: none;  
+}
+.sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark #sidebarToggle {
+  background: #bc9b6a;
+  color: #000;
+  text-decoration: none;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
@@ -44,11 +54,11 @@ a {
 }
 
 .bg-primary {
-  background-color: #ba1c21 !important;
+  background-color: #79bde9 !important;
 }
 
 .fas {
-  color: #ba1c21;
+  color: #79bde9;
 }
 
 #alerts .fas {
@@ -59,11 +69,11 @@ a {
 }
 
 .fas-light {
-  color: #ffffff;
+  color: #000;
 }
 
 .bg-dark {
-  background-color: #ba1c21 !important;
+  background-color: #79bde9 !important;
   background-color: #fff !important;
 }
 
@@ -73,18 +83,18 @@ header .navbar, .bg-light .navbar {
 
 .btn-outline-secondary {
   color: #fff;
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
 .btn-outline-secondary:hover {
   color: #ffffff;
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
 
 .bg-gradient-primary {
-  background-color: #707780;
-  background-image: linear-gradient(180deg,#707780 10%,#707780 100%);
+  background-color: #ffc423;
+  background-image: linear-gradient(180deg,#ffc423 10%,#ffc423 100%);
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
@@ -92,21 +102,30 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#ba1c21;
+  color:#79bde9;
 }
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
-  color: #ffffff;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
+
+.btn-primary, .btn-primary:hover, .btn-primary a {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  text-decoration: underline;
+}
+
 .btn-primary {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #ba1c21;
+  background-color: #79bde9;
 }
 .jumbotron {
   margin-bottom: 0;
@@ -143,12 +162,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
 
 .text-primary {
-  color: #ba1c21 !important;
+  color: #000 !important;
 }
 
 .details .detail_label {
@@ -278,7 +297,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #ba1c21 !important;
+  background-color:  #79bde9 !important;
 }
 
 .card-announcement .card-title {
@@ -286,13 +305,13 @@ button.ms-choice {
 }
 
 .card-announcement .alert-success {
-  color: #ba1c21;
+  color: #79bde9;
   background: white;
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #ba1c21;
-  border-color: #ba1c21;
+  background-color: #79bde9;
+  border-color: #79bde9;
 }
 
 @media(max-width:767px){
@@ -312,7 +331,7 @@ button.ms-choice {
 }
 
 .transaction-debit {
-  color:#ba1c21;
+  color:#79bde9;
 }
 
 
@@ -334,4 +353,15 @@ button.ms-choice {
   width: 30% !important;
   margin-right: .5em;
   display: inline-block !important;
+}
+
+.dt-buttons .btn-primary {
+  background-color: #bc9b6a;
+  border-color: #bc9b6a;
+}
+
+.alert-info {
+  background-color: #79bde9;
+  border-color: #79bde9;
+  color: #000;
 }
