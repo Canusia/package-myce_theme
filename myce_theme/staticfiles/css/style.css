@@ -365,3 +365,6 @@ button.ms-choice {
   border-color: #79bde9;
   color: #000;
 }
+.line-height-1 { line-height: 1; }
+.line-height-1-5 { line-height: 1.5; }
+.line-height-2 { line-height: 2; }
