@@ -336,3 +336,6 @@ button.ms-choice {
   margin-right: .5em;
   display: inline-block !important;
 }
+.line-height-1 { line-height: 1; }
+.line-height-1-5 { line-height: 1.5; }
+.line-height-2 { line-height: 2; }
