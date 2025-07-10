@@ -58,7 +58,7 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
 
 
 .fas {
-  color: #ec6426;
+  color: #fff;
 }
 
 #alerts .fas {
@@ -118,7 +118,7 @@ header .navbar, .bg-light .navbar {
 
 
 .btn-primary, btn.text-white, btn.text-light, button > span > i.fas {
-  color: #ec6426 !important; 
+  color: #fff !important; 
 	background-color: #05233d; 
 	border-color: #05233d;
 }
