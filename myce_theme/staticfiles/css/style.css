@@ -13,7 +13,7 @@ body {
 
 
 a {
-  color: #05233d;
+  color: #ec6426;
 }
 
 a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decoration: underline; }
@@ -22,11 +22,11 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
   color: #000 !important;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
-  background: #16538b;
+  background: #ec6426;
   color: #000;
 }
 .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
-  background: #16538b;
+  background: #ec6426;
   color: #000;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
@@ -53,11 +53,11 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
 }
 
 .bg-primary {
-  background-color: #16538b !important;
+  background-color: #ec6426 !important;
 }
 
 .fas {
-  color: #16538b;
+  color: #ec6426;
 }
 
 #alerts .fas {
@@ -72,7 +72,7 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
 }
 
 .bg-dark {
-  background-color: #16538b !important;
+  background-color: #ec6426 !important;
   background-color: #fff !important;
 }
 
@@ -85,11 +85,11 @@ header .navbar, .bg-light .navbar {
 
 .btn-outline-secondary {
   color: #05233d;
-	background-color: #16538b;
-	border-color: #16538b;
+	background-color: #ec6426;
+	border-color: #ec6426;
 }
 .btn-outline-secondary:hover {
-  color: #16538b;
+  color: #ec6426;
 	background-color: #05233d;
 	border-color: #05233d;
 }
@@ -105,24 +105,24 @@ header .navbar, .bg-light .navbar {
 }
 
 .sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#16538b;
+  color:#ec6426;
 }
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
   color: #05233d !important; 
-	background-color: #16538b; 
-	border-color: #16538b;
+	background-color: #ec6426; 
+	border-color: #ec6426;
 }
 
 
 .btn-primary, btn.text-white, btn.text-light, button > span > i.fas {
-  color: #16538b !important; 
+  color: #ec6426 !important; 
 	background-color: #05233d; 
 	border-color: #05233d;
 }
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #16538b;
+  background-color: #ec6426;
 }
 .jumbotron {
   margin-bottom: 0;
@@ -165,8 +165,8 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #16538b;
-  border-color: #16538b;
+  background-color: #ec6426;
+  border-color: #ec6426;
   color: #05233d !important;
 }
 
@@ -314,8 +314,8 @@ button.ms-choice {
 }
 
 .topbar .dropdown-list .dropdown-header {
-  background-color: #16538b;
-  border-color: #16538b;
+  background-color: #ec6426;
+  border-color: #ec6426;
 }
 
 @media(max-width:767px){
@@ -335,7 +335,7 @@ button.ms-choice {
 }
 
 .transaction-debit {
-  color:#16538b;
+  color:#ec6426;
 }
 
 
