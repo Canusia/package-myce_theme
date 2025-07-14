@@ -1,9 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 body {
   font-size: 16px;
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Merriweather", arial, sans-serif;
   color: #333;
 }
 
@@ -16,18 +15,19 @@ a {
   color: #05233d;
 }
 
-a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decoration: underline; }
+/* a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decoration: underline; } */
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
-  color: #000 !important;
+  color: #ffd375 !important;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
   background: #bb0524;
-  color: #000;
+  color: #ffd375;
 }
 .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
   background: #bb0524;
-  color: #000;
+  color: #ffd375;
+  text-decoration: underline;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
@@ -80,7 +80,7 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
   height: 5.375rem;
 }
 header .navbar, .bg-light .navbar {
-  background-color: #0172CE !important;
+  background-color: #bb0524 !important;
 }
 
 .btn-outline-secondary {
@@ -110,16 +110,17 @@ header .navbar, .bg-light .navbar {
 
 .btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
 .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: #05233d !important; 
+  color: #fff !important; 
 	background-color: #bb0524; 
 	border-color: #bb0524;
+  text-decoration: underline;
 }
 
 
 .btn-primary, btn.text-white, btn.text-light, button > span > i.fas {
-  color: #bb0524 !important; 
-	background-color: #05233d; 
-	border-color: #05233d;
+  color: #fff !important; 
+	background-color: #bb0524; 
+	border-color: #bb0524;
 }
 .dropdown-item.active, .dropdown-item:active {
   background-color: #bb0524;
@@ -301,7 +302,7 @@ button.ms-choice {
 
 
 .card-announcement, .bg-primary {
-  background-color:  #bb0524 !important;
+  background-color:  #ffd375 !important;
 }
 
 .card-announcement .card-title {
