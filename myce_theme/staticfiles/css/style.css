@@ -6,6 +6,10 @@ body {
   color: #333;
 }
 
+.text-muted, .page-item.disabled .page-link {
+  color: #666 !important;
+}
+
 .bg {
   background-color: #eaeaea;
 }
@@ -154,7 +158,7 @@ header .navbar, .bg-light .navbar {
 .details .detail_label {
   text-transform: uppercase;
   font-size: 0.7em;
-  color: #999;
+  color: #666;
 }
 
 .ms-parent {
@@ -334,4 +338,8 @@ button.ms-choice {
   width: 30% !important;
   margin-right: .5em;
   display: inline-block !important;
+}
+
+.breadcrumb-item.active {
+  color: #000 !important;
 }
