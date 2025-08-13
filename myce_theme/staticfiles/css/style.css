@@ -26,7 +26,7 @@ a {
 }
 .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
   background: #bb0524;
-  color: #ffd375;
+  color: #ffd375 !important;
   text-decoration: underline;
 }
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
