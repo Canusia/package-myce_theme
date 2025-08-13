@@ -21,8 +21,8 @@ a {
   color: #ffd375 !important;
 }
 .sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
-  background: #bb0524;
-  color: #ffd375;
+  background: #ffd375;
+  color: #bb0524 !important;
 }
 .sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
   background: #bb0524;
