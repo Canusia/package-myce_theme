@@ -83,13 +83,14 @@ header .navbar, .bg-light .navbar {
   background-color: #bb0524 !important;
 }
 
+
 .btn-outline-secondary {
-  color: #05233d;
+  color: #fff;
 	background-color: #bb0524;
 	border-color: #bb0524;
 }
 .btn-outline-secondary:hover {
-  color: #bb0524;
+  color: #fff;
 	background-color: #05233d;
 	border-color: #05233d;
 }
