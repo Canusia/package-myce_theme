@@ -167,8 +167,8 @@ header .navbar, .bg-light .navbar {
 }
 
 .page-item.active .page-link {
-  background-color: #bb0524;
-  border-color: #bb0524;
+  background-color: #ffd375;
+  border-color: #ffd375;
   color: #05233d !important;
 }
 
