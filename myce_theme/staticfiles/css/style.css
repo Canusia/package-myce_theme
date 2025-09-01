@@ -84,14 +84,12 @@ header .navbar, .bg-light .navbar {
 }
 
 .btn-outline-secondary {
-  color: #044b8b;
+  color: #fff;
 	background-color: #16538b;
 	border-color: #16538b;
 }
 .btn-outline-secondary:hover {
-  color: #fff;
-	background-color: #044b8b;
-	border-color: #044b8b;
+  text-decoration: underline;
 }
 
 .bg-gradient-primary {
