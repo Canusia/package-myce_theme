@@ -11,7 +11,8 @@ body {
 }
 
 a {
-  color: #ffc814;
+  color: #091326;
+  text-decoration: underline;
 }
 
 .sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
