@@ -56,7 +56,7 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
   background-color: #ec6426 !important;
 }
 
-ul.navbar .fas {
+ul.navbar .fas, button > span > i.fas {
   color: #fff;
 }
 
