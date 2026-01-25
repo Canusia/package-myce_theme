@@ -1,44 +1,407 @@
+/* ============================================================================
+   MYCE THEME - CLIENT CUSTOMIZATION VARIABLES
+   ============================================================================
+   
+   Instructions for new client:
+   1. Create new branch: git checkout -b client-name
+   2. Edit ONLY the variables below (lines 10-70)
+   3. Commit and push
+   4. Deploy: git+https://github.com/Canusia/package-myce_theme@client-name
+   
+   DO NOT edit anything below the "BASE STYLES" section.
+   ============================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root {
+  /* Typography */
+  --font-family-base: 'Open Sans', arial, sans-serif;
+  --font-size-base: 16px;
+  --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
+  
+  /* Primary Brand Colors */
+  --color-primary: #222a63;           /* Main brand color (navy) */
+  --color-primary-medium: #16538b;    /* Medium brand color (blue) */
+  --color-primary-light: #90b3d9;     /* Light brand color (light blue) */
+  --color-accent: #eaaa21;            /* Accent color (gold) */
+  
+  /* Sidebar Colors */
+  --sidebar-bg: #222a63;              /* Sidebar background */
+  --sidebar-text: #ffffff;            /* Sidebar text color */
+  --sidebar-active-bg: #222a63;       /* Active menu item background */
+  --sidebar-active-text: #ffffff;     /* Active menu item text */
+  --sidebar-hover-bg: #90b3d9;        /* Hover background */
+  --sidebar-hover-text: #222a63;      /* Hover text color */
+  --sidebar-brand-text: #16538b;      /* Brand/logo text color */
+  
+  /* Button Colors */
+  --btn-primary-bg: #222a63;          /* Primary button background */
+  --btn-primary-text: #ffffff;        /* Primary button text */
+  --btn-primary-border: #222a63;      /* Primary button border */
+  --btn-primary-hover-bg: #90b3d9;    /* Primary button hover background */
+  --btn-primary-hover-text: #222a63;  /* Primary button hover text */
+  --btn-primary-hover-border: #90b3d9;/* Primary button hover border */
+  
+  --btn-secondary-bg: #16538b;        /* Secondary button background */
+  --btn-secondary-text: #ffffff;      /* Secondary button text */
+  --btn-secondary-border: #16538b;    /* Secondary button border */
+  
+  --btn-warning-bg: #f6c23e;          /* Warning button background */
+  --btn-warning-text: #222a63;        /* Warning button text */
+  --btn-warning-border: #f6c23e;      /* Warning button border */
+  
+  /* Status/Alert Colors */
+  --color-success: #289062;           /* Success/positive actions */
+  --color-success-alt: #0172CE;       /* Alternative success color */
+  --color-warning: #289062;           /* Warning color */
+  --color-danger: #78261f;            /* Danger/error color */
+  --color-danger-bg: #f8ccc8;         /* Danger background */
+  
+  /* Transaction Colors */
+  --color-credit: #289062;            /* Credit transactions (green) */
+  --color-debit: #16538b;             /* Debit transactions (blue) */
+  
+  /* Text Colors */
+  --color-text-base: #333333;         /* Base text color */
+  --color-text-muted: #333333;        /* Muted text */
+  --color-text-light: #999999;        /* Light/disabled text */
+  --color-link: #222a63;              /* Link color */
+  
+  /* Background Colors */
+  --bg-page: #fafafa;                 /* Main page background */
+  --bg-light: #eaeaea;                /* Light background sections */
+  --bg-card: #ffffff;                 /* Card backgrounds */
+  --bg-transparent: rgba(250, 250, 250, 0.7); /* Transparent overlay */
+  
+  /* Border Colors */
+  --border-color: #aaaaaa;            /* Standard borders */
+  --border-color-light: #d1d3e2;      /* Light borders */
+  
+  /* Topbar/Header */
+  --topbar-height: 5.375rem;
+  --topbar-bg: #ffffff;
+  --topbar-dropdown-header-bg: #16538b;
+  --topbar-dropdown-header-border: #16538b;
+  
+  /* Announcement Card */
+  --card-announcement-bg: #222a63;
+  --card-announcement-title-color: #000000;
+  --card-announcement-alert-color: #000000;
+  --card-announcement-alert-bg: #ffffff;
+  
+  /* Icon Colors */
+  --icon-color: #16538b;
+  --icon-color-light: #ffffff;
+}
+
+/* Import Custom Font */
+@import url(var(--font-import-url));
+
+
+/* ============================================================================
+   BASE STYLES - DO NOT EDIT BELOW THIS LINE
+   ============================================================================
+   These styles use the variables defined above. To customize for a new client,
+   only modify the :root variables section.
+   ============================================================================ */
+
+
+/* ============================================================================
+   GLOBAL STYLES
+   ============================================================================ */
 
 body {
-  font-size: 16px;
-  font-family: "Open Sans", arial, sans-serif;
-  color: #333;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: var(--color-text-base);
+}
+
+a {
+  color: var(--color-link);
 }
 
 .bg {
-  background-color: #eaeaea;
+  background-color: var(--bg-light);
+}
+
+.text-muted {
+  color: var(--color-text-muted) !important;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #111;
+}
+
+.form-control {
+  color: var(--color-text-base);
 }
 
 
-a {
-  color: #222a63;
-}
-/* 
-a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decoration: underline; } */
+/* ============================================================================
+   LAYOUT
+   ============================================================================ */
 
-.sidebar-dark .nav-item .nav-link, .sidebar-dark .nav-item .nav-link i {
-  color: #fff !important;
+#wrapper #content-wrapper {
+  background-color: var(--bg-page);
 }
-.sidebar-dark .nav-item.active, .sidebar-dark .nav-item.active .nav-link, .sidebar-dark .nav-item.active .nav-link i {
-  background: #222a63;
-  color: #fff;
+
+.topbar {
+  height: var(--topbar-height);
 }
-.sidebar-dark .nav-item .nav-link:hover, .sidebar-dark .nav-item .nav-link i:hover {
-  background: #90b3d9;
-  color: #222a63;
+
+header .navbar,
+.bg-light .navbar {
+  background-color: var(--topbar-bg) !important;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================================
+   SIDEBAR NAVIGATION
+   ============================================================================ */
+
+.sidebar-dark .nav-item .nav-link,
+.sidebar-dark .nav-item .nav-link i {
+  color: var(--sidebar-text) !important;
+}
+
+.sidebar-dark .nav-item.active,
+.sidebar-dark .nav-item.active .nav-link,
+.sidebar-dark .nav-item.active .nav-link i {
+  background: var(--sidebar-active-bg);
+  color: var(--sidebar-active-text);
+}
+
+.sidebar-dark .nav-item .nav-link:hover,
+.sidebar-dark .nav-item .nav-link i:hover {
+  background: var(--sidebar-hover-bg);
+  color: var(--sidebar-hover-text);
+}
+
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
   display: inline;
 }
+
 .sidebar .sidebar-brand {
   text-transform: none;
 }
 
-#wrapper #content-wrapper {
-  background-color: #fafafa;
+.sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
+  color: var(--color-primary);
+  font-weight: bold;
+  background-color: var(--color-accent);
 }
+
+.sidebar-brand-text,
+.navbar-dark .navbar-brand {
+  color: var(--sidebar-brand-text);
+}
+
+.bg-gradient-primary {
+  background-color: var(--sidebar-bg);
+  background-image: linear-gradient(180deg, var(--sidebar-bg) 10%, var(--sidebar-bg) 100%);
+}
+
+
+/* ============================================================================
+   BUTTONS
+   ============================================================================ */
+
+.btn-primary,
+btn.text-white,
+btn.text-light,
+button > span > i.fas {
+  color: var(--btn-primary-text) !important;
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-border);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: var(--btn-primary-hover-text) !important;
+  background-color: var(--btn-primary-hover-bg);
+  border-color: var(--btn-primary-hover-border);
+}
+
+.btn-outline-secondary {
+  color: var(--btn-secondary-text);
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-secondary-border);
+}
+
+.btn-outline-secondary:hover {
+  text-decoration: underline;
+}
+
+.btn-warning {
+  color: var(--btn-warning-text);
+  background-color: var(--btn-warning-bg);
+  border-color: var(--btn-warning-border);
+}
+
+
+/* ============================================================================
+   BACKGROUNDS & COLORS
+   ============================================================================ */
+
+.bg-primary,
+.card-announcement {
+  background-color: var(--card-announcement-bg) !important;
+}
+
+.bg-dark {
+  background-color: var(--topbar-bg) !important;
+}
+
+.trans-bg {
+  background-color: var(--bg-transparent);
+}
+
+
+/* ============================================================================
+   ICONS
+   ============================================================================ */
+
+.fas {
+  color: var(--icon-color);
+}
+
+#alerts .fas {
+  color: var(--icon-color-light);
+}
+
+.fas-light {
+  color: var(--icon-color-light);
+}
+
+
+/* ============================================================================
+   TABLES
+   ============================================================================ */
+
+.table {
+  color: var(--color-text-base);
+  width: 100%;
+}
+
+th.sortable::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0dc";
+  right: 8px;
+  color: var(--color-text-light);
+}
+
+th.sortable.asc::after {
+  content: "\f0d8";
+}
+
+th.sortable.desc::after {
+  content: "\f0d7";
+}
+
+th.sortable:hover::after {
+  color: var(--color-text-base);
+}
+
+
+/* ============================================================================
+   ALERTS & STATUS
+   ============================================================================ */
+
+.alert-warning {
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+  color: #fff;
+}
+
+.list-group-item-success {
+  background-color: var(--color-success-alt);
+  color: #fff;
+}
+
+.list-group-item-success a {
+  background-color: var(--color-success-alt);
+  color: #fff;
+  text-decoration: underline;
+}
+
+li.list-group-item-danger {
+  color: var(--color-danger);
+  background-color: var(--color-danger-bg);
+}
+
+
+/* ============================================================================
+   CARDS & ANNOUNCEMENTS
+   ============================================================================ */
+
+.card-announcement .card-title {
+  color: var(--card-announcement-title-color);
+}
+
+.card-announcement .alert-success {
+  color: var(--card-announcement-alert-color);
+  background: var(--card-announcement-alert-bg);
+}
+
+
+/* ============================================================================
+   DROPDOWNS
+   ============================================================================ */
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--btn-secondary-bg);
+}
+
+.topbar .dropdown-list .dropdown-header {
+  background-color: var(--topbar-dropdown-header-bg);
+  border-color: var(--topbar-dropdown-header-border);
+}
+
+
+/* ============================================================================
+   PAGINATION
+   ============================================================================ */
+
+.page-item.active .page-link {
+  background-color: var(--btn-secondary-bg);
+  border-color: var(--btn-secondary-bg);
+  color: var(--color-primary) !important;
+}
+
+.page-item.disabled .page-link {
+  color: #666 !important;
+}
+
+
+/* ============================================================================
+   TRANSACTIONS
+   ============================================================================ */
+
+.transaction-credit {
+  color: var(--color-credit);
+}
+
+.transaction-debit {
+  color: var(--color-debit);
+}
+
+
+/* ============================================================================
+   MODALS
+   ============================================================================ */
+
 .modal-full {
   min-width: 100%;
   margin: 0;
@@ -47,136 +410,31 @@ a:link, .sidebar .nav-item .collapse .collapse-inner .collapse-item { text-decor
 .modal-full .modal-content {
   min-height: 100vh;
 }
-.table {
-  color: #333;
-  width: 100%;
+
+.modal-dialog,
+.modal-content {
+  height: 98%;
 }
 
-.bg-primary {
-  background-color: #16538b !important;
+.modal-dialog {
+  max-width: 98%;
 }
 
-.fas {
-  color: #16538b;
-}
-
-#alerts .fas {
-  color: white;
-}
-.trans-bg {
-    background-color: rgba(250, 250, 250, 0.7);
-}
-
-.fas-light {
-  color: #ffffff;
-}
-
-.bg-dark {
-  background-color: #16538b !important;
-  background-color: #fff !important;
-}
-
-.topbar {
-  height: 5.375rem;
-}
-header .navbar, .bg-light .navbar {
-  background-color: #fff !important;
-}
-
-.btn-outline-secondary {
-  color: #fff;
-	background-color: #16538b;
-	border-color: #16538b;
-}
-.btn-outline-secondary:hover {
-  text-decoration: underline;
-}
-
-.bg-gradient-primary {
-  background-color: #222a63;
-  background-image: linear-gradient(180deg,#222a63 10%,#222a63 100%);
-}
-
-.sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: #222a63;
-  font-weight: bold;
-  background-color: #eaaa21;
-}
-
-.sidebar-brand-text, .navbar-dark .navbar-brand {
-  color:#16538b;
-}
-
-.btn-primary:hover, .btn-primary:active, .show>.btn-primary.dropdown-toggle,
-.btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: #222a63 !important; 
-	background-color: #90b3d9; 
-	border-color: #90b3d9;
+.modal-body {
+  max-height: calc(100vh - 65px);
+  overflow-y: none;
 }
 
 
-.btn-primary, btn.text-white, btn.text-light, button > span > i.fas {
-  color: #fff !important; 
-	background-color: #222a63; 
-	border-color: #222a63;
-}
-.dropdown-item.active, .dropdown-item:active {
-  background-color: #16538b;
-}
-.jumbotron {
-  margin-bottom: 0;
-}
+/* ============================================================================
+   FORMS & INPUTS
+   ============================================================================ */
 
-  th.sortable::after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f0dc";
-    right: 8px;
-    color: #999;
-  }
-  
-  th.sortable.asc::after {
-    content: "\f0d8";
-  }
-  
-  th.sortable.desc::after {
-    content: "\f0d7";
-  }
-  
-  th.sortable:hover::after {
-    color: #333;
-  }
-
-.alert-warning {
-    background-color: #289062;
-    border-color: #289062;
-    color: #fff;
-}
-
-.list-group-item-success {
-  background-color: #0172CE;
-  color: #fff;
-}
-
-.list-group-item-success a {
-  background-color: #0172CE;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.page-item.active .page-link {
-  background-color: #16538b;
-  border-color: #16538b;
-  color: #222a63 !important;
-}
-
-.text-primary {
-  color: #222a63 !important;
-}
-
-.details .detail_label {
-  text-transform: uppercase;
-  font-size: 0.7em;
-  color: #999;
+.selectdatewidget,
+.graduationmonthyearwidget {
+  width: 30% !important;
+  margin-right: .5em;
+  display: inline-block !important;
 }
 
 .ms-parent {
@@ -185,233 +443,191 @@ header .navbar, .bg-light .navbar {
 
 button.ms-choice {
   height: 36px;
-  border: 1px solid #d1d3e2;
+  border: 1px solid var(--border-color-light);
 }
 
 .ms-parent span {
   margin-top: 5px;
 }
 
-    /* Settings */
-    ul#report-category,
-    ul#report-list {
-        list-style-type: none;
-    }
 
-    #report-category li,
-    #report-list li {
-        cursor: pointer;
-        border-bottom: 1px solid #f0f0f0;
-        padding: 0.4em 0 0.4em 0.5em;
-        margin: 0;
-    }
+/* ============================================================================
+   BREADCRUMBS
+   ============================================================================ */
 
-    #report-category li:nth-child(odd),
-    #report-list li:nth-child(even) {
-        background-color: #f9f9f9;
-    }
-
-    #report-category li.active,
-    #report-list li.active {
-        cursor: text;
-        background-color: #e0e0e0;
-        background-image: background-position: 98% 50%;
-        background-repeat: no-repeat;
-    }
-
-    #report-list li.active {}
-
-    #report-category li:hover,
-    #report-list li:hover {
-        background-color: #eaeaea;
-    }
-
-    #report-category li.processing,
-    #report-list li.processing {
-        background-position: right center;
-        background-repeat: no-repeat;
-    }
-
-    .report-description {
-        background: #f9f9f9;
-        border: 1px solid #eaeaea;
-        margin: 0.2em;
-        padding: 0.5em;
-    }
-
-    .report-description p,
-    .report p {
-        margin: 0;
-        margin-bottom: 1em;
-    }
-
-    .report-description p:last-child {
-        margin: 0;
-    }
-
-    h3.report-title {
-        padding-top: 0;
-    }
-
-    div.report-config {
-        float: left;
-        width: 50%;
-    }
-
-    div.report-description-container {
-        float: left;
-        width: 50%;
-    }
-
-    .report p {
-        margin-bottom: 1em;
-    }
-
-    .report p.watermark {
-        color: #aaa;
-        margin-top: -0.5em;
-        float: left;
-        width: 70%;
-        font-size: 0.8em;
-    }
-
-    .report p.config_report {
-        float: right;
-        width: 30%;
-        margin-top: -0.5em;
-        color: #aaa;
-        cursor: pointer;
-        text-align: right;
-        font-size: 0.8em;
-    }
-
-    .report p.config_report:hover {
-        color: #333;
-    }
-
-    .report div.config_container {
-        display: none;
-        font-size: 0.8em;
-        background: #fff;
-        padding: 1em;
-        margin: 0.5em;
-        border: 1px solid #aaa;
-    }
-
-
-.card-announcement, .bg-primary {
-  background-color:  #222a63 !important;
+.breadcrumb-item.active {
+  color: var(--color-text-base);
 }
 
-.card-announcement .card-title {
-  color: #000;
+
+/* ============================================================================
+   TABS & NAVIGATION
+   ============================================================================ */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--color-text-base);
+  font-weight: bold;
+  background-color: #fff;
+  border-color: var(--border-color) var(--border-color) #fff;
 }
 
-.card-announcement .alert-success {
-  color: #000;
-  background: white;
+.nav-tabs {
+  border-bottom: 1px solid var(--border-color);
 }
 
-.topbar .dropdown-list .dropdown-header {
-  background-color: #16538b;
-  border-color: #16538b;
-}
-
-@media(max-width:767px){
-  /* 
-   * Changed selector to `.tab-content > .tab-pane` in order to override `.fade:not(.show)`
-   * In BS4 Beta `.tab-pane`s were rendered hidden by just `.fade`
-   */
+@media(max-width:767px) {
   .nav-link {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
   }
 }
 
-.transaction-credit {
-  color:#289062
+
+/* ============================================================================
+   BORDERS & CARDS
+   ============================================================================ */
+
+.border,
+.card {
+  border: 1px solid var(--border-color) !important;
 }
 
-.transaction-debit {
-  color:#16538b;
-}
-
-
-.modal-dialog,
-.modal-content {
-  /* 80% of window height */
-  height: 98%;
-}
-
-.modal-dialog {
-  max-width: 98%;
-}
-.modal-body {
-  max-height: calc(100vh - 65px);
-  overflow-y: none;
-}
-
-
-.selectdatewidget, .graduationmonthyearwidget {
-  width: 30% !important;
-  margin-right: .5em;
-  display: inline-block !important;
-}
-
-
-.breadcrumb-item.active {
-  color: #333;
-}
-
-
-input::placeholder {
-  font-weight: bold;
-  opacity: 0.5;
-  color: #111;
-}
-
-.text-muted {
-  color: #333 !important;
-}
-
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #333;
-    font-weight: bold;
-    background-color: #fff;
-    border-color: #aaa #aaa #fff;
-}
-
-.border, .card {
-  border: 1px solid #aaa !important;
-}
-.nav-tabs {
-  border-bottom: 1px solid #aaa;
-}
 .border-top-0 {
   border-top: 0px solid #fff !important;
 }
 
-.form-control {
-  color: #333;
-}
 
-.btn-warning {
-  color: #222a63;
-  background-color: #f6c23e;
-  border-color: #f6c23e;
-}
+/* ============================================================================
+   SWEET ALERT OVERRIDES
+   ============================================================================ */
+
 .swal-button:not([disabled]):hover {
-  background-color: #222a63;
-  color: #f6c23e;
+  background-color: var(--color-primary);
+  color: var(--btn-warning-bg);
 }
 
 .swal-button--confirm {
-  background-color: #f6c23e;
-  color: #222a63;
+  background-color: var(--btn-warning-bg);
+  color: var(--color-primary);
 }
 
-li.list-group-item-danger {
-  color: #78261f;
-  background-color: #f8ccc8;
+
+/* ============================================================================
+   REPORTS SECTION
+   ============================================================================ */
+
+ul#report-category,
+ul#report-list {
+  list-style-type: none;
+}
+
+#report-category li,
+#report-list li {
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0.4em 0 0.4em 0.5em;
+  margin: 0;
+}
+
+#report-category li:nth-child(odd),
+#report-list li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#report-category li.active,
+#report-list li.active {
+  cursor: text;
+  background-color: #e0e0e0;
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+}
+
+#report-category li:hover,
+#report-list li:hover {
+  background-color: var(--bg-light);
+}
+
+#report-category li.processing,
+#report-list li.processing {
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.report-description {
+  background: #f9f9f9;
+  border: 1px solid var(--bg-light);
+  margin: 0.2em;
+  padding: 0.5em;
+}
+
+.report-description p,
+.report p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.report-description p:last-child {
+  margin: 0;
+}
+
+h3.report-title {
+  padding-top: 0;
+}
+
+div.report-config {
+  float: left;
+  width: 50%;
+}
+
+div.report-description-container {
+  float: left;
+  width: 50%;
+}
+
+.report p {
+  margin-bottom: 1em;
+}
+
+.report p.watermark {
+  color: #aaa;
+  margin-top: -0.5em;
+  float: left;
+  width: 70%;
+  font-size: 0.8em;
+}
+
+.report p.config_report {
+  float: right;
+  width: 30%;
+  margin-top: -0.5em;
+  color: #aaa;
+  cursor: pointer;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.report p.config_report:hover {
+  color: var(--color-text-base);
+}
+
+.report div.config_container {
+  display: none;
+  font-size: 0.8em;
+  background: #fff;
+  padding: 1em;
+  margin: 0.5em;
+  border: 1px solid #aaa;
+}
+
+
+/* ============================================================================
+   DETAILS SECTION
+   ============================================================================ */
+
+.details .detail_label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: var(--color-text-light);
 }
