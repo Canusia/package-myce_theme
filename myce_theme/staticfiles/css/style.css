@@ -18,26 +18,26 @@
   --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
   
   /* Primary Brand Colors */
-  --color-primary: #222a63;           /* Main brand color (navy) */
+  --color-primary: #b7142e;           /* Main brand color (navy) */
   --color-primary-medium: #16538b;    /* Medium brand color (blue) */
   --color-primary-light: #90b3d9;     /* Light brand color (light blue) */
   --color-accent: #eaaa21;            /* Accent color (gold) */
   
   /* Sidebar Colors */
-  --sidebar-bg: #222a63;              /* Sidebar background */
+  --sidebar-bg: #b7142e;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #222a63;       /* Active menu item background */
+  --sidebar-active-bg: #b7142e;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
   --sidebar-hover-bg: #90b3d9;        /* Hover background */
-  --sidebar-hover-text: #222a63;      /* Hover text color */
+  --sidebar-hover-text: #b7142e;      /* Hover text color */
   --sidebar-brand-text: #16538b;      /* Brand/logo text color */
   
   /* Button Colors */
-  --btn-primary-bg: #222a63;          /* Primary button background */
+  --btn-primary-bg: #b7142e;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #222a63;      /* Primary button border */
+  --btn-primary-border: #b7142e;      /* Primary button border */
   --btn-primary-hover-bg: #90b3d9;    /* Primary button hover background */
-  --btn-primary-hover-text: #222a63;  /* Primary button hover text */
+  --btn-primary-hover-text: #b7142e;  /* Primary button hover text */
   --btn-primary-hover-border: #90b3d9;/* Primary button hover border */
   
   --btn-secondary-bg: #16538b;        /* Secondary button background */
@@ -45,7 +45,7 @@
   --btn-secondary-border: #16538b;    /* Secondary button border */
   
   --btn-warning-bg: #f6c23e;          /* Warning button background */
-  --btn-warning-text: #222a63;        /* Warning button text */
+  --btn-warning-text: #b7142e;        /* Warning button text */
   --btn-warning-border: #f6c23e;      /* Warning button border */
   
   /* Status/Alert Colors */
@@ -63,7 +63,7 @@
   --color-text-base: #333333;         /* Base text color */
   --color-text-muted: #333333;        /* Muted text */
   --color-text-light: #999999;        /* Light/disabled text */
-  --color-link: #222a63;              /* Link color */
+  --color-link: #b7142e;              /* Link color */
   
   /* Background Colors */
   --bg-page: #fafafa;                 /* Main page background */
@@ -82,7 +82,7 @@
   --topbar-dropdown-header-border: #16538b;
   
   /* Announcement Card */
-  --card-announcement-bg: #222a63;
+  --card-announcement-bg: #b7142e;
   --card-announcement-title-color: #000000;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
