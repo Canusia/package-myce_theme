@@ -28,21 +28,21 @@
   --sidebar-text: #ffffff;            /* Sidebar text color */
   --sidebar-active-bg: #b7142e;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
-  --sidebar-hover-bg: #90b3d9;        /* Hover background */
-  --sidebar-hover-text: #b7142e;      /* Hover text color */
+  --sidebar-hover-bg: #333;        /* Hover background */
+  --sidebar-hover-text: #fff;      /* Hover text color */
   --sidebar-brand-text: #16538b;      /* Brand/logo text color */
   
   /* Button Colors */
   --btn-primary-bg: #b7142e;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
   --btn-primary-border: #b7142e;      /* Primary button border */
-  --btn-primary-hover-bg: #90b3d9;    /* Primary button hover background */
-  --btn-primary-hover-text: #b7142e;  /* Primary button hover text */
-  --btn-primary-hover-border: #90b3d9;/* Primary button hover border */
+  --btn-primary-hover-bg: #333;    /* Primary button hover background */
+  --btn-primary-hover-text: #fff;  /* Primary button hover text */
+  --btn-primary-hover-border: #333;/* Primary button hover border */
   
-  --btn-secondary-bg: #16538b;        /* Secondary button background */
+  --btn-secondary-bg: #333;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
-  --btn-secondary-border: #16538b;    /* Secondary button border */
+  --btn-secondary-border: #333;    /* Secondary button border */
   
   --btn-warning-bg: #f6c23e;          /* Warning button background */
   --btn-warning-text: #b7142e;        /* Warning button text */
