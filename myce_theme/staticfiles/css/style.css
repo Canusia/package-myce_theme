@@ -21,7 +21,8 @@
   --color-primary: #b7142e;           /* Main brand color (navy) */
   --color-primary-medium: #16538b;    /* Medium brand color (blue) */
   --color-primary-light: #90b3d9;     /* Light brand color (light blue) */
-  --color-accent: #eaaa21;            /* Accent color (gold) */
+  --color-accent: #d1d1d1;            /* Accent color (gold) */
+  --color-primary-menu: #333333;
   
   /* Sidebar Colors */
   --sidebar-bg: #b7142e;              /* Sidebar background */
@@ -118,6 +119,10 @@ a {
   color: var(--color-link);
 }
 
+a.text-light:focus, a.text-light:hover {
+    color: var(--color-link) !important;
+}
+
 .bg {
   background-color: var(--bg-light);
 }
@@ -194,7 +199,7 @@ header .navbar,
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: var(--color-primary);
+  color: var(--color-primary-menu);
   font-weight: bold;
   background-color: var(--color-accent);
 }
