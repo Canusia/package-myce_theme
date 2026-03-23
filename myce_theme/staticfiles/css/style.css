@@ -18,14 +18,14 @@
   --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
   
     /* Primary Brand Colors */
-  --color-primary: #76bd22;           /* Main brand color (WCCC green) */
+  --color-primary: #76bd43;           /* Main brand color (WCCC green) */
   --color-primary-medium: #4a8a0e;    /* Medium brand color (darker green) */
   --color-primary-light: #b8dд82;     /* Light brand color (light green) */
   --color-accent: #f5f5f5;            /* Accent color (light gray) */
   --color-primary-menu: #333333;
 
   /* Sidebar Colors */
-  --sidebar-bg: #76bd22;              /* Sidebar background */
+  --sidebar-bg: #76bd43;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
   --sidebar-active-bg: #4a8a0e;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
@@ -34,9 +34,9 @@
   --sidebar-brand-text: #333333;      /* Brand/logo text color */
 
   /* Button Colors */
-  --btn-primary-bg: #76bd22;          /* Primary button background */
+  --btn-primary-bg: #76bd43;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #76bd22;      /* Primary button border */
+  --btn-primary-border: #76bd43;      /* Primary button border */
   --btn-primary-hover-bg: #4a8a0e;    /* Primary button hover background */
   --btn-primary-hover-text: #fff;     /* Primary button hover text */
   --btn-primary-hover-border: #4a8a0e;/* Primary button hover border */
