@@ -35,10 +35,10 @@
 
   /* Button Colors */
   --btn-primary-bg: #c1b561;          /* Primary button background */
-  --btn-primary-text: #ffffff;        /* Primary button text */
+  --btn-primary-text: #333333;        /* Primary button text */
   --btn-primary-border: #c1b561;      /* Primary button border */
   --btn-primary-hover-bg: #4a8a0e;    /* Primary button hover background */
-  --btn-primary-hover-text: #fff;     /* Primary button hover text */
+  --btn-primary-hover-text: #ffffff;     /* Primary button hover text */
   --btn-primary-hover-border: #4a8a0e;/* Primary button hover border */
 
   --btn-secondary-bg: #333;        /* Secondary button background */
