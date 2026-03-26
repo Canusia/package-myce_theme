@@ -25,18 +25,18 @@
   --color-primary-menu: #333333;
 
   /* Sidebar Colors */
-  --sidebar-bg: #76bd43;              /* Sidebar background */
+  --sidebar-bg: #abc380;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #4a8a0e;       /* Active menu item background */
+  --sidebar-active-bg: #76bd43;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
-  --sidebar-hover-bg: #4a8a0e;        /* Hover background */
+  --sidebar-hover-bg: #76bd43;        /* Hover background */
   --sidebar-hover-text: #fff;         /* Hover text color */
   --sidebar-brand-text: #333333;      /* Brand/logo text color */
 
   /* Button Colors */
-  --btn-primary-bg: #76bd43;          /* Primary button background */
+  --btn-primary-bg: #c1b561;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #76bd43;      /* Primary button border */
+  --btn-primary-border: #c1b561;      /* Primary button border */
   --btn-primary-hover-bg: #4a8a0e;    /* Primary button hover background */
   --btn-primary-hover-text: #fff;     /* Primary button hover text */
   --btn-primary-hover-border: #4a8a0e;/* Primary button hover border */
@@ -83,7 +83,7 @@
   --topbar-dropdown-header-border: #16538b;
   
   /* Announcement Card */
-  --card-announcement-bg: #4a8a0e;
+  --card-announcement-bg: #c1b561;
   --card-announcement-title-color: #000000;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
