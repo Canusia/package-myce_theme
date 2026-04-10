@@ -25,9 +25,9 @@
   --color-primary-menu: #333333;
 
   /* SWAL Alert Colors */
-  --swal-color-primary: #76db43;        /* Primary color for SWAL buttons */
-  --swal-btn-warning-bg: #4a8a0e;      /* Warning button background */
-  --swal-color-primary: #333333;              /* SWAL text color */
+  --swal-btn-warning-bg: rgb(10, 133, 182);      /* Warning button background */
+  --swal-btn-hover-bg: #c1b561;      /* Warning button hover background */
+  --swal-color-primary: #fff;              /* SWAL text color */
 
   /* Sidebar Colors */
   --sidebar-bg: #abc380;              /* Sidebar background */
@@ -514,7 +514,7 @@ button.ms-choice {
    ============================================================================ */
 
 .swal-button:not([disabled]):hover {
-  background-color: var(--swal-color-primary);
+  background-color: var(--swal-btn-hover-bg);
   color: var(--swal-color-primary);
 }
 
