@@ -121,6 +121,7 @@ a {
 
 a.text-light:focus, a.text-light:hover {
     text-decoration: underline;
+    color: var(--color-link);
 }
 
 .bg {
@@ -382,7 +383,7 @@ li.list-group-item-danger {
 .page-item.active .page-link {
   background-color: var(--btn-secondary-bg);
   border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  color: var(--btn-primary-text) !important;
 }
 
 .page-item.disabled .page-link {
