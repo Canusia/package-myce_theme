@@ -64,7 +64,7 @@
   --color-text-base: #333333;         /* Base text color */
   --color-text-muted: #333333;        /* Muted text */
   --color-text-light: #999999;        /* Light/disabled text */
-  --color-link: #cd1f40;              /* Link color */
+  --color-link: #cd1f40;              /* Link hover color */
   
   /* Background Colors */
   --bg-page: #fafafa;                 /* Main page background */
