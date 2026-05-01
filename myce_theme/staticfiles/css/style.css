@@ -18,25 +18,25 @@
   --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
   
   /* Primary Brand Colors */
-  --color-primary: #b7142e;           /* Main brand color (navy) */
-  --color-primary-medium: #16538b;    /* Medium brand color (blue) */
+  --color-primary: #cd1f40;           /* Main brand color (navy) */
+  --color-primary-medium: #d7d7d9;    /* Medium brand color (blue) */
   --color-primary-light: #90b3d9;     /* Light brand color (light blue) */
   --color-accent: #d1d1d1;            /* Accent color (gold) */
   --color-primary-menu: #333333;
   
   /* Sidebar Colors */
-  --sidebar-bg: #b7142e;              /* Sidebar background */
+  --sidebar-bg: #cd1f40;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #b7142e;       /* Active menu item background */
+  --sidebar-active-bg: #cd1f40;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
   --sidebar-hover-bg: #333;        /* Hover background */
   --sidebar-hover-text: #fff;      /* Hover text color */
-  --sidebar-brand-text: #16538b;      /* Brand/logo text color */
+  --sidebar-brand-text: #d7d7d9;      /* Brand/logo text color */
   
   /* Button Colors */
-  --btn-primary-bg: #b7142e;          /* Primary button background */
+  --btn-primary-bg: #cd1f40;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #b7142e;      /* Primary button border */
+  --btn-primary-border: #cd1f40;      /* Primary button border */
   --btn-primary-hover-bg: #333;    /* Primary button hover background */
   --btn-primary-hover-text: #fff;  /* Primary button hover text */
   --btn-primary-hover-border: #333;/* Primary button hover border */
@@ -46,7 +46,7 @@
   --btn-secondary-border: #333;    /* Secondary button border */
   
   --btn-warning-bg: #f6c23e;          /* Warning button background */
-  --btn-warning-text: #b7142e;        /* Warning button text */
+  --btn-warning-text: #cd1f40;        /* Warning button text */
   --btn-warning-border: #f6c23e;      /* Warning button border */
   
   /* Status/Alert Colors */
@@ -58,13 +58,13 @@
   
   /* Transaction Colors */
   --color-credit: #289062;            /* Credit transactions (green) */
-  --color-debit: #16538b;             /* Debit transactions (blue) */
+  --color-debit: #d7d7d9;             /* Debit transactions (blue) */
   
   /* Text Colors */
   --color-text-base: #333333;         /* Base text color */
   --color-text-muted: #333333;        /* Muted text */
   --color-text-light: #999999;        /* Light/disabled text */
-  --color-link: #b7142e;              /* Link color */
+  --color-link: #cd1f40;              /* Link color */
   
   /* Background Colors */
   --bg-page: #fafafa;                 /* Main page background */
@@ -79,17 +79,17 @@
   /* Topbar/Header */
   --topbar-height: 5.375rem;
   --topbar-bg: #ffffff;
-  --topbar-dropdown-header-bg: #16538b;
-  --topbar-dropdown-header-border: #16538b;
+  --topbar-dropdown-header-bg: #d7d7d9;
+  --topbar-dropdown-header-border: #d7d7d9;
   
   /* Announcement Card */
-  --card-announcement-bg: #b7142e;
-  --card-announcement-title-color: #000000;
+  --card-announcement-bg: #cd1f40;
+  --card-announcement-title-color: #fff;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
   
   /* Icon Colors */
-  --icon-color: #16538b;
+  --icon-color: #d7d7d9;
   --icon-color-light: #ffffff;
 }
 
@@ -121,7 +121,7 @@ a {
 
 a.text-light:focus, a.text-light:hover {
     text-decoration: underline;
-    color: var(--color-link);
+    color: var(--color-link) !important;
 }
 
 .bg {
