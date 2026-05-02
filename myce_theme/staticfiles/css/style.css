@@ -89,7 +89,7 @@
   --card-announcement-alert-bg: #ffffff;
   
   /* Icon Colors */
-  --icon-color: #d7d7d9;
+  --icon-color: #2a3132;
   --icon-color-light: #ffffff;
 }
 
@@ -178,12 +178,12 @@ header .navbar,
   color: var(--sidebar-text) !important;
 }
 
-.sidebar-dark .nav-item.active,
+/* .sidebar-dark .nav-item.active,
 .sidebar-dark .nav-item.active .nav-link,
 .sidebar-dark .nav-item.active .nav-link i {
   background: var(--sidebar-active-bg);
   color: var(--sidebar-active-text);
-}
+} */
 
 .sidebar-dark .nav-item .nav-link:hover,
 .sidebar-dark .nav-item .nav-link i:hover {
