@@ -58,7 +58,7 @@
   
   /* Transaction Colors */
   --color-credit: #289062;            /* Credit transactions (green) */
-  --color-debit: #d7d7d9;             /* Debit transactions (blue) */
+  --color-debit: #cd1f40;             /* Debit transactions (blue) */
   
   /* Text Colors */
   --color-text-base: #333333;         /* Base text color */
@@ -121,7 +121,6 @@ a {
 
 a.text-light:focus, a.text-light:hover {
     text-decoration: underline;
-    color: var(--color-link) !important;
 }
 
 .bg {
