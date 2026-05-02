@@ -121,7 +121,7 @@ a {
 
 a.text-light:focus, a.text-light:hover {
     text-decoration: underline;
-    color: var(--icon-color-light);
+    color: var(--icon-color-light) !important;
 }
 
 .bg {
