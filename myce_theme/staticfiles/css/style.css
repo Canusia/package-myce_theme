@@ -176,6 +176,7 @@ header .navbar,
 .sidebar-dark .nav-item .nav-link,
 .sidebar-dark .nav-item .nav-link i {
   color: var(--sidebar-text) !important;
+  
 }
 
 /* .sidebar-dark .nav-item.active,
@@ -184,6 +185,9 @@ header .navbar,
   background: var(--sidebar-active-bg);
   color: var(--sidebar-active-text);
 } */
+.sidebar-dark .nav-item.active .nav-link:hover {
+  color: var(--sidebar-hover-text);
+}
 
 .sidebar-dark .nav-item .nav-link:hover,
 .sidebar-dark .nav-item .nav-link i:hover {
