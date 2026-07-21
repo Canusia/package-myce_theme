@@ -13,57 +13,57 @@
 
 :root {
   /* Typography */
-  --font-family-base: 'Open Sans', arial, sans-serif;
+  --font-family-base: 'Montserrat', arial, sans-serif;
   --font-size-base: 16px;
-  --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
+  --font-import-url: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap';
   
   /* Primary Brand Colors */
-  --color-primary: #016bb1;           /* Main brand color (SCCC blue) */
-  --color-primary-medium: #01568f;    /* Medium brand color (dark blue) */
-  --color-primary-light: #99c6e8;     /* Light brand color (light blue) */
-  --color-accent: #fbee64;            /* Accent color (SCCC yellow) */
+  --color-primary: #003866;           /* Main brand color (primary) */
+  --color-primary-medium: #004983;    /* Medium brand color (medium) */
+  --color-primary-light: #9fd4ef;     /* Light brand color (light) */
+  --color-accent: #ffd12f;            /* Accent color (accent) */
   
   /* Sidebar Colors */
-  --sidebar-bg: #016bb1;              /* Sidebar background */
+  --sidebar-bg: #003866;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #016bb1;       /* Active menu item background */
+  --sidebar-active-bg: #003866;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
-  --sidebar-hover-bg: #99c6e8;        /* Hover background */
-  --sidebar-hover-text: #016bb1;      /* Hover text color */
-  --sidebar-brand-text: #01568f;      /* Brand/logo text color */
+  --sidebar-hover-bg: #9fd4ef;        /* Hover background */
+  --sidebar-hover-text: #003866;      /* Hover text color */
+  --sidebar-brand-text: #004983;      /* Brand/logo text color */
   
   /* Button Colors */
-  --btn-primary-bg: #016bb1;          /* Primary button background */
+  --btn-primary-bg: #003866;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #016bb1;      /* Primary button border */
-  --btn-primary-hover-bg: #99c6e8;    /* Primary button hover background */
-  --btn-primary-hover-text: #016bb1;  /* Primary button hover text */
-  --btn-primary-hover-border: #99c6e8;/* Primary button hover border */
+  --btn-primary-border: #003866;      /* Primary button border */
+  --btn-primary-hover-bg: #9fd4ef;    /* Primary button hover background */
+  --btn-primary-hover-text: #003866;  /* Primary button hover text */
+  --btn-primary-hover-border: #9fd4ef;/* Primary button hover border */
   
-  --btn-secondary-bg: #01568f;        /* Secondary button background */
+  --btn-secondary-bg: #004983;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
-  --btn-secondary-border: #01568f;    /* Secondary button border */
+  --btn-secondary-border: #004983;    /* Secondary button border */
   
-  --btn-warning-bg: #f6c23e;          /* Warning button background */
-  --btn-warning-text: #016bb1;        /* Warning button text */
-  --btn-warning-border: #f6c23e;      /* Warning button border */
+  --btn-warning-bg: #ffd12f;          /* Warning button background */
+  --btn-warning-text: #000000;        /* Warning button text */
+  --btn-warning-border: #ffd12f;      /* Warning button border */
   
   /* Status/Alert Colors */
   --color-success: #289062;           /* Success/positive actions */
-  --color-success-alt: #016bb1;       /* Alternative success color */
+  --color-success-alt: #004983;       /* Alternative success color */
   --color-warning: #289062;           /* Warning color */
   --color-danger: #78261f;            /* Danger/error color */
   --color-danger-bg: #f8ccc8;         /* Danger background */
   
   /* Transaction Colors */
   --color-credit: #289062;            /* Credit transactions (green) */
-  --color-debit: #01568f;             /* Debit transactions (blue) */
+  --color-debit: #004983;             /* Debit transactions */
   
   /* Text Colors */
   --color-text-base: #333333;         /* Base text color */
   --color-text-muted: #333333;        /* Muted text */
   --color-text-light: #999999;        /* Light/disabled text */
-  --color-link: #016bb1;              /* Link color */
+  --color-link: #003866;              /* Link color */
   
   /* Background Colors */
   --bg-page: #fafafa;                 /* Main page background */
@@ -78,17 +78,17 @@
   /* Topbar/Header */
   --topbar-height: 5.375rem;
   --topbar-bg: #ffffff;
-  --topbar-dropdown-header-bg: #01568f;
-  --topbar-dropdown-header-border: #01568f;
+  --topbar-dropdown-header-bg: #004983;
+  --topbar-dropdown-header-border: #004983;
   
   /* Announcement Card */
-  --card-announcement-bg: #016bb1;
+  --card-announcement-bg: #003866;
   --card-announcement-title-color: #000000;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
   
   /* Icon Colors */
-  --icon-color: #01568f;
+  --icon-color: #004983;
   --icon-color-light: #ffffff;
 }
 
