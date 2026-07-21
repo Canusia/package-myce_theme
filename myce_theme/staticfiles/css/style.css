@@ -18,52 +18,52 @@
   --font-import-url: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap';
   
   /* Primary Brand Colors */
-  --color-primary: #016bb1;           /* Main brand color (SCCC blue) */
-  --color-primary-medium: #01568f;    /* Medium brand color (dark blue) */
-  --color-primary-light: #99c6e8;     /* Light brand color (light blue) */
-  --color-accent: #fbee64;            /* Accent color (SCCC yellow) */
+  --color-primary: #e11837;           /* Main brand color (primary) */
+  --color-primary-medium: #b3122c;    /* Medium brand color (medium) */
+  --color-primary-light: #f4a6b2;     /* Light brand color (light) */
+  --color-accent: #5da1a6;            /* Accent color (accent) */
   
   /* Sidebar Colors */
-  --sidebar-bg: #016bb1;              /* Sidebar background */
+  --sidebar-bg: #e11837;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #016bb1;       /* Active menu item background */
+  --sidebar-active-bg: #e11837;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
-  --sidebar-hover-bg: #99c6e8;        /* Hover background */
-  --sidebar-hover-text: #016bb1;      /* Hover text color */
-  --sidebar-brand-text: #01568f;      /* Brand/logo text color */
+  --sidebar-hover-bg: #b3122c;        /* Hover background */
+  --sidebar-hover-text: #ffffff;      /* Hover text color */
+  --sidebar-brand-text: #b3122c;      /* Brand/logo text color */
   
   /* Button Colors */
-  --btn-primary-bg: #016bb1;          /* Primary button background */
+  --btn-primary-bg: #e11837;          /* Primary button background */
   --btn-primary-text: #ffffff;        /* Primary button text */
-  --btn-primary-border: #016bb1;      /* Primary button border */
-  --btn-primary-hover-bg: #99c6e8;    /* Primary button hover background */
-  --btn-primary-hover-text: #016bb1;  /* Primary button hover text */
-  --btn-primary-hover-border: #99c6e8;/* Primary button hover border */
+  --btn-primary-border: #e11837;      /* Primary button border */
+  --btn-primary-hover-bg: #b3122c;    /* Primary button hover background */
+  --btn-primary-hover-text: #ffffff;  /* Primary button hover text */
+  --btn-primary-hover-border: #b3122c;/* Primary button hover border */
   
-  --btn-secondary-bg: #01568f;        /* Secondary button background */
+  --btn-secondary-bg: #2f6b6f;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
-  --btn-secondary-border: #01568f;    /* Secondary button border */
+  --btn-secondary-border: #2f6b6f;    /* Secondary button border */
   
-  --btn-warning-bg: #f6c23e;          /* Warning button background */
-  --btn-warning-text: #016bb1;        /* Warning button text */
-  --btn-warning-border: #f6c23e;      /* Warning button border */
+  --btn-warning-bg: #f4bb33;          /* Warning button background */
+  --btn-warning-text: #000000;        /* Warning button text */
+  --btn-warning-border: #f4bb33;      /* Warning button border */
   
   /* Status/Alert Colors */
   --color-success: #289062;           /* Success/positive actions */
-  --color-success-alt: #016bb1;       /* Alternative success color */
+  --color-success-alt: #2f6b6f;       /* Alternative success color */
   --color-warning: #289062;           /* Warning color */
   --color-danger: #78261f;            /* Danger/error color */
   --color-danger-bg: #f8ccc8;         /* Danger background */
   
   /* Transaction Colors */
   --color-credit: #289062;            /* Credit transactions (green) */
-  --color-debit: #01568f;             /* Debit transactions (blue) */
+  --color-debit: #2f6b6f;             /* Debit transactions */
   
   /* Text Colors */
   --color-text-base: #333333;         /* Base text color */
   --color-text-muted: #333333;        /* Muted text */
   --color-text-light: #999999;        /* Light/disabled text */
-  --color-link: #016bb1;              /* Link color */
+  --color-link: #e11837;              /* Link color */
   
   /* Background Colors */
   --bg-page: #fafafa;                 /* Main page background */
@@ -78,17 +78,17 @@
   /* Topbar/Header */
   --topbar-height: 5.375rem;
   --topbar-bg: #ffffff;
-  --topbar-dropdown-header-bg: #01568f;
-  --topbar-dropdown-header-border: #01568f;
+  --topbar-dropdown-header-bg: #b3122c;
+  --topbar-dropdown-header-border: #b3122c;
   
   /* Announcement Card */
-  --card-announcement-bg: #016bb1;
+  --card-announcement-bg: #e11837;
   --card-announcement-title-color: #000000;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
   
   /* Icon Colors */
-  --icon-color: #01568f;
+  --icon-color: #2f6b6f;
   --icon-color-light: #ffffff;
 }
 
