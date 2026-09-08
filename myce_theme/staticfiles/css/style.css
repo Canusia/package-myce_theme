@@ -31,6 +31,11 @@
   --sidebar-hover-bg: #b3122c;        /* Hover background */
   --sidebar-hover-text: #ffffff;      /* Hover text color */
   --sidebar-brand-text: #b3122c;      /* Brand/logo text color */
+  /* Submenu (collapse-item) highlight. Kept dark enough for white text: the
+     previous pairing was --color-primary on --color-accent, i.e. 1.62:1 and
+     effectively unreadable. White on #2f6b6f is 6.08:1. */
+  --sidebar-submenu-active-bg: #2f6b6f;    /* Active submenu item background */
+  --sidebar-submenu-active-text: #ffffff;  /* Active submenu item text */
   
   /* Button Colors */
   --btn-primary-bg: #e11837;          /* Primary button background */
@@ -43,6 +48,10 @@
   --btn-secondary-bg: #2f6b6f;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
   --btn-secondary-border: #2f6b6f;    /* Secondary button border */
+
+  /* Current page in a DataTables pager. Was --color-primary on
+     --btn-secondary-bg, i.e. 1.27:1 -- the active page number was invisible. */
+  --pagination-active-text: #ffffff;  /* Current page number text */
   
   --btn-warning-bg: #f4bb33;          /* Warning button background */
   --btn-warning-text: #000000;        /* Warning button text */
@@ -194,9 +203,9 @@ header .navbar,
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: var(--color-primary);
+  color: var(--sidebar-submenu-active-text);
   font-weight: bold;
-  background-color: var(--color-accent);
+  background-color: var(--sidebar-submenu-active-bg);
 }
 
 .sidebar-brand-text,
@@ -377,7 +386,7 @@ li.list-group-item-danger {
 .page-item.active .page-link {
   background-color: var(--btn-secondary-bg);
   border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  color: var(--pagination-active-text) !important;
 }
 
 .page-item.disabled .page-link {
