@@ -31,6 +31,11 @@
   --sidebar-hover-bg: #99c6e8;        /* Hover background */
   --sidebar-hover-text: #016bb1;      /* Hover text color */
   --sidebar-brand-text: #01568f;      /* Brand/logo text color */
+  /* Submenu (collapse-item) highlight. SCCC blue on SCCC yellow is 4.67:1,
+     which clears AA, so the existing pairing is kept -- but it now lives in a
+     variable instead of being hardcoded down in the base styles. */
+  --sidebar-submenu-active-bg: #fbee64;    /* Active submenu item background */
+  --sidebar-submenu-active-text: #016bb1;  /* Active submenu item text */
   
   /* Button Colors */
   --btn-primary-bg: #016bb1;          /* Primary button background */
@@ -43,6 +48,11 @@
   --btn-secondary-bg: #01568f;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
   --btn-secondary-border: #01568f;    /* Secondary button border */
+
+  /* Current page in a DataTables pager. Was --color-primary on
+     --btn-secondary-bg -- #016bb1 on #01568f is 1.38:1, so the active page
+     number was invisible. White on #01568f is 7.70:1. */
+  --pagination-active-text: #ffffff;  /* Current page number text */
   
   --btn-warning-bg: #f6c23e;          /* Warning button background */
   --btn-warning-text: #016bb1;        /* Warning button text */
@@ -194,9 +204,9 @@ header .navbar,
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: var(--color-primary);
+  color: var(--sidebar-submenu-active-text);
   font-weight: bold;
-  background-color: var(--color-accent);
+  background-color: var(--sidebar-submenu-active-bg);
 }
 
 .sidebar-brand-text,
@@ -377,7 +387,7 @@ li.list-group-item-danger {
 .page-item.active .page-link {
   background-color: var(--btn-secondary-bg);
   border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  color: var(--pagination-active-text) !important;
 }
 
 .page-item.disabled .page-link {
