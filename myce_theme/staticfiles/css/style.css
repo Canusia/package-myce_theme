@@ -377,7 +377,9 @@ li.list-group-item-danger {
 .page-item.active .page-link {
   background-color: var(--btn-secondary-bg);
   border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  /* White on the dark brand background. --color-primary here was dark blue
+     on dark blue (#003866 on #004983) and unreadable. */
+  color: #ffffff !important;
 }
 
 .page-item.disabled .page-link {
