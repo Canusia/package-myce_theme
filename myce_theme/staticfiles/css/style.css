@@ -28,9 +28,18 @@
   --sidebar-text: #ffffff;            /* Sidebar text color */
   --sidebar-active-bg: #af2124;       /* Active menu item background */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
-  --sidebar-hover-bg: #f6dede;        /* Hover background */
-  --sidebar-hover-text: #af2124;      /* Hover text color */
+  /* Hover: the base rule forces --sidebar-text (white) on links with
+     !important, so hover text is always white. White on the old #f6dede
+     tint was 1.28:1; white on dark cardinal is 9.35:1. */
+  --sidebar-hover-bg: #8a1a1d;        /* Hover background */
+  --sidebar-hover-text: #ffffff;      /* Hover text color */
   --sidebar-brand-text: #8a1a1d;      /* Brand/logo text color */
+  /* Submenu (collapse-item) highlight. Cardinal on Poppy Yellow was 4.1:1;
+     dark cardinal on Poppy Yellow is 5.59:1. */
+  --sidebar-submenu-active-bg: #f2c23e;    /* Active submenu item background */
+  --sidebar-submenu-active-text: #8a1a1d;  /* Active submenu item text */
+  /* Expand/collapse chevrons. sb-admin draws them 50% white (2.71:1). */
+  --sidebar-chevron-color: #ffffff;        /* Collapse chevron color */
   
   /* Button Colors */
   --btn-primary-bg: #af2124;          /* Primary button background */
@@ -194,9 +203,13 @@ header .navbar,
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: var(--color-primary);
+  color: var(--sidebar-submenu-active-text);
   font-weight: bold;
-  background-color: var(--color-accent);
+  background-color: var(--sidebar-submenu-active-bg);
+}
+
+.sidebar.sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
+  color: var(--sidebar-chevron-color);
 }
 
 .sidebar-brand-text,
