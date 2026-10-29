@@ -31,6 +31,10 @@
   --sidebar-hover-bg: #69b3e7;        /* Hover background */
   --sidebar-hover-text: #00366a;      /* Hover text color */
   --sidebar-brand-text: #004c97;      /* Brand/logo text color */
+  /* Submenu (collapse-item) highlight. Was --color-primary on --color-accent
+     -- #00366a on #c30032 is 1.94:1. White on the MSU Denver red is 6.24:1. */
+  --sidebar-submenu-active-bg: #c30032;    /* Active submenu item background */
+  --sidebar-submenu-active-text: #ffffff;  /* Active submenu item text */
   
   /* Button Colors */
   --btn-primary-bg: #00366a;          /* Primary button background */
@@ -43,6 +47,10 @@
   --btn-secondary-bg: #004c97;        /* Secondary button background */
   --btn-secondary-text: #ffffff;      /* Secondary button text */
   --btn-secondary-border: #004c97;    /* Secondary button border */
+
+  /* Current page in a DataTables pager. Was --color-primary on
+     --btn-secondary-bg -- #00366a on #004c97 is 1.43:1. White is 8.47:1. */
+  --pagination-active-text: #ffffff;  /* Current page number text */
   
   --btn-warning-bg: #f6c23e;          /* Warning button background */
   --btn-warning-text: #000000;        /* Warning button text */
@@ -194,9 +202,9 @@ header .navbar,
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active {
-  color: var(--color-primary);
+  color: var(--sidebar-submenu-active-text);
   font-weight: bold;
-  background-color: var(--color-accent);
+  background-color: var(--sidebar-submenu-active-bg);
 }
 
 .sidebar-brand-text,
@@ -377,7 +385,7 @@ li.list-group-item-danger {
 .page-item.active .page-link {
   background-color: var(--btn-secondary-bg);
   border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  color: var(--pagination-active-text) !important;
 }
 
 .page-item.disabled .page-link {
