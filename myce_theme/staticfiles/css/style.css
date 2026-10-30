@@ -27,7 +27,7 @@
   /* Sidebar Colors */
   --sidebar-bg: #b7142e;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #b7142e;       /* Active menu item background */
+  --sidebar-active-bg: #8a0f22;       /* Active menu item background (darker than the sidebar so it stands out) */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
   --sidebar-hover-bg: #333;        /* Hover background */
   --sidebar-hover-text: #fff;      /* Hover text color */
@@ -84,7 +84,7 @@
   
   /* Announcement Card */
   --card-announcement-bg: #b7142e;
-  --card-announcement-title-color: #000000;
+  --card-announcement-title-color: #ffffff;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
   
@@ -183,6 +183,11 @@ header .navbar,
 .sidebar-dark .nav-item.active .nav-link i {
   background: var(--sidebar-active-bg);
   color: var(--sidebar-active-text);
+}
+
+/* Accent bar marks the current page in the sidebar. */
+.sidebar-dark .nav-item.active .nav-link {
+  box-shadow: inset 4px 0 0 var(--color-accent);
 }
 
 .sidebar-dark .nav-item .nav-link:hover,
@@ -284,6 +289,11 @@ button > span > i.fas {
 
 #alerts .fas {
   color: var(--icon-color-light);
+}
+
+/* Icons inside buttons take the button's text color, so they stay readable on filled buttons. */
+.btn .fas {
+  color: inherit;
 }
 
 .fas-light {
