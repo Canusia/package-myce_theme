@@ -284,6 +284,11 @@ button > span > i.fas {
   color: var(--icon-color-light);
 }
 
+/* Icons inside buttons take the button's text color, so they stay readable on filled buttons. */
+.btn .fas {
+  color: inherit;
+}
+
 
 /* ============================================================================
    TABLES
@@ -375,9 +380,9 @@ li.list-group-item-danger {
    ============================================================================ */
 
 .page-item.active .page-link {
-  background-color: var(--btn-secondary-bg);
-  border-color: var(--btn-secondary-bg);
-  color: var(--color-primary) !important;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff !important;
 }
 
 .page-item.disabled .page-link {
