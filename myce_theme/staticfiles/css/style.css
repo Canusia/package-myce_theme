@@ -26,7 +26,7 @@
   /* Sidebar Colors */
   --sidebar-bg: #00573f;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #00573f;       /* Active menu item background */
+  --sidebar-active-bg: #007345;       /* Active menu item background (lighter than the sidebar so it stands out) */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
   --sidebar-hover-bg: #a6d8c2;        /* Hover background */
   --sidebar-hover-text: #00573f;      /* Hover text color */
@@ -83,7 +83,7 @@
 
   /* Announcement Card */
   --card-announcement-bg: #00573f;
-  --card-announcement-title-color: #000000;
+  --card-announcement-title-color: #ffffff;
   --card-announcement-alert-color: #000000;
   --card-announcement-alert-bg: #ffffff;
   
@@ -177,6 +177,11 @@ header .navbar,
 .sidebar-dark .nav-item.active .nav-link i {
   background: var(--sidebar-active-bg);
   color: var(--sidebar-active-text);
+}
+
+/* Accent bar marks the current page in the sidebar. */
+.sidebar-dark .nav-item.active .nav-link {
+  box-shadow: inset 4px 0 0 var(--color-accent);
 }
 
 .sidebar-dark .nav-item .nav-link:hover,
