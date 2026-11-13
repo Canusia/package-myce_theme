@@ -26,7 +26,7 @@
   /* Sidebar Colors */
   --sidebar-bg: #003866;              /* Sidebar background */
   --sidebar-text: #ffffff;            /* Sidebar text color */
-  --sidebar-active-bg: #003866;       /* Active menu item background */
+  --sidebar-active-bg: #004983;       /* Active menu item background (lighter than the sidebar) */
   --sidebar-active-text: #ffffff;     /* Active menu item text */
   --sidebar-hover-bg: #9fd4ef;        /* Hover background */
   --sidebar-hover-text: #003866;      /* Hover text color */
@@ -179,6 +179,12 @@ header .navbar,
   color: var(--sidebar-active-text);
 }
 
+/* Mark the current page: accent bar plus bold text (myce_theme#1). */
+.sidebar-dark .nav-item.active .nav-link {
+  border-left: 4px solid var(--color-accent);
+  font-weight: 600;
+}
+
 .sidebar-dark .nav-item .nav-link:hover,
 .sidebar-dark .nav-item .nav-link i:hover {
   background: var(--sidebar-hover-bg);
@@ -278,6 +284,14 @@ button > span > i.fas {
 
 #alerts .fas {
   color: var(--icon-color-light);
+}
+
+/* Icons inside buttons take the button's text color, so a blue icon does not
+   disappear on a blue button (myce_theme#1). */
+.btn .fas,
+.btn .far,
+.btn .fab {
+  color: inherit;
 }
 
 .fas-light {
