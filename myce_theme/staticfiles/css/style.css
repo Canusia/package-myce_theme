@@ -179,9 +179,10 @@ header .navbar,
   color: var(--sidebar-active-text);
 }
 
-/* Mark the current page: accent bar plus bold text (myce_theme#1). */
+/* Mark the current page: accent bar plus bold text (myce_theme#1). An inset
+   shadow draws the bar without shifting the text or the collapsed icon. */
 .sidebar-dark .nav-item.active .nav-link {
-  border-left: 4px solid var(--color-accent);
+  box-shadow: inset 4px 0 0 var(--color-accent);
   font-weight: 600;
 }
 
